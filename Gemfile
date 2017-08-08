@@ -3,7 +3,8 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.1.3'
 # Use postgresql as the database for Active Record
-gem 'pg', '~> 0.18'
+# gem 'pg', '~> 0.18'
+gem 'pg', '>= 0.19.0.beta'
 gem 'puma'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -25,13 +26,13 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'bootstrap', '~> 4.0.0.alpha6'
 
-source 'https://rails-assets.org' do
-  gem 'rails-assets-tether', '>= 1.1.0'
-end
+# source 'https://rails-assets.org' do
+#   gem 'rails-assets-tether', '>= 1.1.0'
+# end
 
 # Use ActiveModel has_secure_password
 # use platforms: [:ruby] to make it work for windows
-gem 'bcrypt', platforms: [:ruby]
+gem 'bcrypt'#, platforms: [:ruby]
 
 # Use Unicorn as the app server
 # gem 'unicorn'
